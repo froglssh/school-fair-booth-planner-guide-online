@@ -82,7 +82,7 @@ th {
 }
 </style>
 </head>
-<body>
+<body><aside style="max-width:1100px;margin:20px auto;padding:20px;border:1px solid #85a6c8;border-radius:12px;background:#f3f8ff;color:#243c53;font-family:system-ui,sans-serif;line-height:1.8"><h2 style="margin-top:0">2026-10-10 更新：資料清除範圍修正</h2><ul><li>清除全部只移除本攤位工具的主題、AI 規劃文字、工作名單與輪值資料，不會清除幹部、座位、打掃、班費或評語。</li><li>資料改用 lssh.stall.v1. 專用前綴，並可讀取舊版已保存的攤位資料。各區仍請按「儲存資料」，不是所有操作都已自動存檔。</li><li>儲存失敗會保留畫面並提示；格式毀損的舊資料不會自動刪除。PNG／PDF 是報表，不能當作完整可還原資料備份。</li></ul></aside>
 <h1>校慶園遊會攤位規劃程式（codex優化版）使用說明</h1>
 
 <p>本系統專為班級導師與校慶攤位規劃團隊設計，協助快速且有系統地完成「食物主題規劃」、「攤位工作指派」以及「販賣食物輪值排班」。系統提供即時的利潤分析、靈活的人員指派工具、Excel 班級名單匯入與匯出，並結合 AI 搜尋與 ChatGPT 提示詞輔助功能，讓園遊會準備工作更具效率。</p>
@@ -94,7 +94,7 @@ th {
 <ol>
   <li>使用 Chrome、Edge、Safari 等現代瀏覽器開啟上述線上版網址。</li>
   <li>本系統採用響應式設計，但由於資料表格與欄位較多，<strong>強烈建議使用電腦或平板操作</strong>，能獲得最佳的版面配置與操作體驗。</li>
-  <li>本系統的所有資料皆會自動儲存在您瀏覽器的本機空間（Local Storage），關閉瀏覽器後下次開啟仍可繼續編輯。</li>
+  <li>請在各功能區按「儲存資料」，資料會保存於目前瀏覽器的本機空間（Local Storage），重開後可讀取已保存內容。</li>
 </ol>
 
 <h2>二、食物主題規劃</h2>
@@ -183,19 +183,19 @@ th {
       <td>食物主題規劃</td>
       <td>手動輸入、預設卡片選取</td>
       <td>PNG 圖片、PDF 檔案、網頁列印</td>
-      <td>本機瀏覽器 Local Storage 自動存檔</td>
+      <td>本機瀏覽器 Local Storage 按鈕存檔</td>
     </tr>
     <tr>
       <td>攤位工作規劃</td>
       <td>手動輸入、Excel 檔案匯入（.xlsx, .xls, .csv）</td>
       <td>PNG 圖片、PDF 檔案、網頁列印</td>
-      <td>本機瀏覽器 Local Storage 自動存檔</td>
+      <td>本機瀏覽器 Local Storage 按鈕存檔</td>
     </tr>
     <tr>
       <td>販賣食物輪值</td>
       <td>同步工作名單、手動新增</td>
       <td>PNG 圖片、PDF 檔案、網頁列印</td>
-      <td>本機瀏覽器 Local Storage 自動存檔</td>
+      <td>本機瀏覽器 Local Storage 按鈕存檔</td>
     </tr>
   </tbody>
 </table>
